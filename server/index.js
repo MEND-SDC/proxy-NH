@@ -11,8 +11,8 @@ app.use(cors());
 // serve up static file
 
 app.use(
-  '/airbnb/photos',
-  proxy({ target: 'http://localhost:3004' })
+  '/api/photos',
+  proxy({ target: 'http://35.162.183.181' })
 );
 
 app.use('/*', express.static('public'));
